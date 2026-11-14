@@ -12,8 +12,6 @@ Smart Center doesn't collect, send, or share any information about you or your M
   its own window.
 - **Permissions.** Each module asks only for the macOS permissions it needs, and you choose whether
   to allow them. You can change them at any time in System Settings › Privacy & Security.
-
-When automatic updates are added, Smart Center will contact this page on GitHub to check for new
-versions. No personal information is sent.
-
-Questions: use **Suggest a Feature** in Smart Center › About.
+- **Updates.** Smart Center connects to the internet only to check for updates: it reads the list of
+  versions from this page on GitHub and, when you choose to install one, downloads it from here.
+  No personal information is sent. You can turn off automatic checks in Smart Center › About.

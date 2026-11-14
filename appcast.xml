@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Smart Center</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sat, 14 Nov 2026 19:18:56 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h2>Smart Center 1.0</h2>
+<p>The first version of Smart Center: small utilities for your Mac, in one place.</p>
+<ul>
+  <li><b>Display Corners</b>: round the corners of the displays you choose.</li>
+  <li><b>Window Tiling</b>: drag a window to an edge or corner of the screen to tile it.</li>
+  <li><b>Quit on Close</b>: apps quit when you close their last window. You can also require holding ⌘Q to quit.</li>
+  <li><b>Minimize from Dock</b> and <b>Fill Screen on Click</b>: the Dock icon minimizes, the green button fills the screen.</li>
+  <li><b>Menu Bar Management</b>: hide the menu bar icons you don’t need.</li>
+  <li><b>Color Picker</b>, <b>Text Capture</b>, <b>Scratchpad</b>, <b>Camera Preview</b>, <b>Keyboard Cleaning</b>.</li>
+  <li><b>Keep Awake</b>: on demand, on a schedule, or while an app is open, with a battery limit.</li>
+  <li><b>Clipboard History</b>: paste again what you copied, or paste as plain text with ⌥⇧⌘V.</li>
+  <li>Control Center and menu bar controls, in English and Italian.</li>
+</ul>
+<p>Requires a Mac with Apple silicon and macOS 14 or later. Tested on macOS 27.</p>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0/Smart-Center-1.0.zip" length="2531043" type="application/octet-stream" sparkle:edSignature="mFtslXT9y6ITEfwPeZdXJlYmjCefRh3fT/t1T+gtYgt0h3IKdTBN/Yp+l1MneQqDEIrv5nf44g72KPAEDI/QAQ=="/>
+        </item>
+    </channel>
+</rss>
