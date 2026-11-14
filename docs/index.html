@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Smart Center — Free Mac utilities for macOS: window tiling, keep awake, clipboard history</title>
 <meta name="description" content="Smart Center is a free menu bar app for macOS with small Mac utilities in one place: window tiling, quit on close, keep awake, clipboard history, color picker, text capture, and more. Built for Apple silicon.">
 <meta name="keywords" content="Mac utilities, macOS utilities, Mac menu bar app, macOS app, Apple silicon, M1, window tiling, window manager, keep awake, clipboard history, color picker, text recognition, quit on close, free Mac app">
@@ -89,14 +89,15 @@
   }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 max(22px, env(safe-area-inset-right)) 0 max(22px, env(safe-area-inset-left)); }
   .display { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif; }
 
   /* Hero */
-  .hero { text-align: center; padding: 80px 0 0; }
+  /* Solo il margine in alto: quelli laterali sono di .wrap */
+  .hero { text-align: center; padding-top: 80px; }
   .hero img.icon { width: 120px; height: 120px; display: block; margin: 0 auto 18px; }
   .hero h1 { font-size: clamp(44px, 7.5vw, 72px); line-height: 1.05; font-weight: 700; letter-spacing: -0.015em; margin: 0; }
-  .hero .tagline { font-size: clamp(21px, 3vw, 28px); line-height: 1.2; font-weight: 500; color: var(--text-2); margin: 12px 0 0; letter-spacing: 0.004em; }
+  .hero .tagline { font-size: clamp(21px, 3vw, 28px); line-height: 1.2; font-weight: 500; color: var(--text-2); margin: 12px 0 0; letter-spacing: 0.004em; text-wrap: balance; }
   .cta { margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
   .button {
     display: inline-flex; align-items: center; gap: 8px;
