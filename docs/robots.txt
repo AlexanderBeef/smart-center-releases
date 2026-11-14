@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexanderbeef.github.io/smart-center-releases/sitemap.xml
