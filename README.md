@@ -2,8 +2,6 @@
 
 Small utilities for your Mac, in one place.
 
-**[Visit the website](https://alexanderbeef.github.io/smart-center-releases/)** · **[Download for Mac](https://github.com/AlexanderBeef/smart-center-releases/releases/latest/download/Smart-Center.dmg)**
-
 Smart Center lives in the menu bar and brings together a set of small tools, called modules.
 Turn on the ones you need, and use them from its settings, the menu bar, or Control Center.
 
@@ -30,7 +28,7 @@ Turn on the ones you need, and use them from its settings, the menu bar, or Cont
 
 ## Download
 
-Download the latest version from the [website](https://alexanderbeef.github.io/smart-center-releases/) or from [Releases](https://github.com/AlexanderBeef/smart-center-releases/releases/latest).
+Download the latest version from [Releases](https://github.com/AlexanderBeef/smart-center-releases/releases/latest).
 It's signed and notarized by Apple, so macOS opens it without warnings.
 
 Open the downloaded file and drag Smart Center to the Applications folder, then open it from there.
@@ -49,3 +47,5 @@ check for updates. See [PRIVACY.md](PRIVACY.md).
 
 Smart Center is free to download and use. The source code is not public.
 © 2026 Alessandro Manzo. All rights reserved. See [LICENSE](LICENSE).
+
+<sub>Website: [alexanderbeef.github.io/smart-center-releases](https://alexanderbeef.github.io/smart-center-releases/)</sub>
