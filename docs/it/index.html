@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+  // Lingua: la scelta fatta nel footer si ricorda (la pagina inglese la legge per decidere se venire qui).
+  (function () {
+    var KEY = 'sc-lang';
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[data-lang]');
+      if (a) { try { localStorage.setItem(KEY, a.getAttribute('data-lang')); } catch (_) {} }
+    });
+  })();
+</script>
+<title>Smart Center — Utility gratuite per Mac: affiancamento finestre, Mantieni attivo, cronologia appunti</title>
+<meta name="description" content="Smart Center è un’app gratuita per la barra dei menu di macOS che riunisce piccole utility per il Mac: affiancamento finestre, uscita alla chiusura, Mantieni attivo, cronologia appunti, selettore colore, cattura testo e altro ancora. Progettata per Apple silicon.">
+<meta name="keywords" content="utility per Mac, utility macOS, app barra dei menu Mac, app macOS, Apple silicon, M1, affiancamento finestre, gestione finestre, mantieni attivo, cronologia appunti, selettore colore, riconoscimento testo, esci alla chiusura, app gratuita per Mac">
+<meta name="author" content="Alessandro Manzo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://alexanderbeef.github.io/smart-center-releases/it/">
+<link rel="alternate" hreflang="en" href="https://alexanderbeef.github.io/smart-center-releases/">
+<link rel="alternate" hreflang="it" href="https://alexanderbeef.github.io/smart-center-releases/it/">
+<link rel="alternate" hreflang="x-default" href="https://alexanderbeef.github.io/smart-center-releases/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Smart Center">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://alexanderbeef.github.io/smart-center-releases/it/">
+<meta property="og:title" content="Smart Center — Piccole utility per il Mac">
+<meta property="og:description" content="Un’app gratuita per la barra dei menu di macOS con affiancamento finestre, Mantieni attivo, cronologia appunti e altro ancora. Progettata per Apple silicon.">
+<meta property="og:image" content="https://alexanderbeef.github.io/smart-center-releases/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Smart Center: piccole utility per il Mac, in un unico posto. Progettata per Apple silicon.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Smart Center — Piccole utility per il Mac">
+<meta name="twitter:description" content="Un’app gratuita per la barra dei menu di macOS con affiancamento finestre, Mantieni attivo, cronologia appunti e altro ancora. Progettata per Apple silicon.">
+<meta name="twitter:image" content="https://alexanderbeef.github.io/smart-center-releases/assets/share.png">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Smart Center",
+  "description": "Un’app gratuita per la barra dei menu di macOS che riunisce piccole utility per il Mac: affiancamento finestre, uscita alla chiusura, riduzione dal Dock, gestione della barra dei menu, Mantieni attivo, cronologia appunti, selettore colore, cattura testo, taccuino, anteprima della videocamera e pulizia della tastiera.",
+  "inLanguage": "it",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "macOS 14 o versioni successive",
+  "processorRequirements": "Apple silicon (M1 o successivi)",
+  "softwareVersion": "1.0.2",
+  "url": "https://alexanderbeef.github.io/smart-center-releases/it/",
+  "downloadUrl": "https://github.com/AlexanderBeef/smart-center-releases/releases/latest/download/Smart-Center.dmg",
+  "image": "https://alexanderbeef.github.io/smart-center-releases/assets/icon.png",
+  "screenshot": "https://alexanderbeef.github.io/smart-center-releases/assets/screens/1-general.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "author": { "@type": "Person", "name": "Alessandro Manzo" }
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --text-2: #6e6e73;
+    --text-3: #86868b;
+    --line: rgba(0, 0, 0, 0.1);
+    --blue: #0071e3;
+    --blue-hover: #0077ed;
+    --link: #0066cc;
+    --dot: rgba(0, 0, 0, 0.24);
+    --dot-on: rgba(0, 0, 0, 0.8);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --bg-alt: #161617;
+      --card: #1d1d1f;
+      --text: #f5f5f7;
+      --text-2: #a1a1a6;
+      --text-3: #86868b;
+      --line: rgba(255, 255, 255, 0.12);
+      --blue: #0a84ff;
+      --blue-hover: #409cff;
+      --link: #2997ff;
+      --dot: rgba(255, 255, 255, 0.28);
+      --dot-on: rgba(255, 255, 255, 0.85);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 max(22px, env(safe-area-inset-right)) 0 max(22px, env(safe-area-inset-left)); }
+  .display { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif; }
+
+  /* Hero */
+  /* Solo il margine in alto: quelli laterali sono di .wrap */
+  .hero { text-align: center; padding-top: 80px; }
+  .hero img.icon { width: 120px; height: 120px; display: block; margin: 0 auto 18px; }
+  .hero h1 { font-size: clamp(44px, 7.5vw, 72px); line-height: 1.05; font-weight: 700; letter-spacing: -0.015em; margin: 0; }
+  .hero .tagline { font-size: clamp(21px, 3vw, 28px); line-height: 1.2; font-weight: 500; color: var(--text-2); margin: 12px 0 0; letter-spacing: 0.004em; text-wrap: balance; }
+  .cta { margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .button {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--blue); color: #fff;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.022em;
+    padding: 11px 22px; border-radius: 980px;
+    transition: background 0.2s;
+  }
+  .button:hover { background: var(--blue-hover); text-decoration: none; }
+  .button svg { width: 16px; height: 16px; }
+  .meta { font-size: 14px; line-height: 1.43; color: var(--text-2); margin: 0; letter-spacing: -0.016em; }
+  /* Sul telefono la riga sotto il pulsante va a capo dopo la versione, senza il punto in fondo */
+  .meta .brk { display: none; }
+  @media (max-width: 480px) { .meta .sep { display: none; } .meta .brk { display: inline; } }
+  /* Adesivi "Built for Apple silicon" (immagini fatte da Alessandro): verticale in alto, orizzontale nella sezione */
+  .sv { width: 168px; height: auto; margin-top: 10px; }
+
+  /* Carousel */
+  .gallery { padding: 44px 0 72px; }
+  .track {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    scrollbar-width: none; -ms-overflow-style: none;
+  }
+  .track::-webkit-scrollbar { display: none; }
+  .slide { flex: 0 0 100%; scroll-snap-align: center; text-align: center; padding: 0 22px; }
+  .slide img { width: 100%; max-width: 860px; height: auto; display: block; margin: 0 auto; }
+  .dots { display: flex; justify-content: center; gap: 12px; margin-top: 18px; }
+  .dots button {
+    width: 8px; height: 8px; padding: 0; border: 0; border-radius: 980px;
+    background: var(--dot); cursor: pointer; transition: width 0.35s ease, background 0.35s ease;
+  }
+  .dots button[aria-current="true"] { width: 28px; background: var(--dot-on); }
+
+  /* Sections */
+  section { padding: 80px 0; }
+  section.alt { background: var(--bg-alt); }
+  h2 { font-size: clamp(32px, 4.8vw, 48px); line-height: 1.08; font-weight: 700; letter-spacing: -0.003em; text-align: center; margin: 0; }
+  .lead { text-align: center; color: var(--text-2); font-size: clamp(19px, 2.4vw, 21px); line-height: 1.38; margin: 14px auto 0; max-width: 620px; letter-spacing: 0.011em; }
+
+  /* Module lists, like grouped lists in System Settings */
+  .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; align-items: start; }
+  .group h3 { font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.02em; margin: 0 0 8px 16px; }
+  .list { background: var(--card); border-radius: 14px; overflow: hidden; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .row img { width: 36px; height: 36px; flex: none; }
+  .row .text { flex: 1; padding: 11px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+  .row:last-child .text { border-bottom: 0; }
+  .row h4 { font-size: 15px; line-height: 1.33; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  .row p { font-size: 13px; line-height: 1.38; color: var(--text-2); margin: 1px 0 0; letter-spacing: -0.008em; }
+
+  /* Coming soon */
+  .soon { margin-top: 56px; }
+  .soon h3 { font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.02em; text-align: center; margin: 0 0 14px; }
+  /* Righe compatte su due colonne (una sul telefono): icona a sinistra, nome e descrizione accanto */
+  .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  @media (max-width: 600px) { .tiles { grid-template-columns: 1fr; } }
+  .tile { display: flex; align-items: center; gap: 12px; background: var(--card); border-radius: 12px; padding: 12px 16px; text-align: left; }
+  .tile img { width: 36px; height: 36px; flex: none; }
+  /* Nome come negli elenchi dei moduli disponibili, più una riga che dice a cosa serve */
+  .tile h4 { font-size: 15px; line-height: 1.33; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  .tile p { font-size: 13px; line-height: 1.38; color: var(--text-2); margin: 1px 0 0; letter-spacing: -0.008em; }
+
+  /* Apple silicon */
+  .sh { width: 100%; max-width: 440px; height: auto; display: block; margin: 0 auto 36px; }
+
+  /* Privacy */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px; }
+  .fact h4 { font-size: 17px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.022em; }
+  .fact p { font-size: 14px; line-height: 1.43; color: var(--text-2); margin: 0; letter-spacing: -0.016em; }
+
+  /* End and footer */
+  .end { text-align: center; }
+  .end img { width: 80px; height: 80px; display: block; margin: 0 auto 16px; }
+  footer { border-top: 1px solid var(--line); padding: 18px 0 36px; font-size: 12px; color: var(--text-3); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
+  footer a { color: var(--text-2); }
+  /* Selettore della lingua: la lingua attuale è testo, l'altra è un link */
+  footer .lang { margin-left: 10px; padding-left: 12px; border-left: 1px solid var(--line); white-space: nowrap; }
+
+  @media (max-width: 760px) {
+    .groups { grid-template-columns: 1fr; }
+    /* Con gli elenchi in colonna, anche "Coming soon" va a sinistra come i loro titoli */
+    .soon h3 { text-align: left; margin: 0 0 8px 16px; }
+    .facts { grid-template-columns: 1fr; gap: 24px; }
+    section { padding: 60px 0; }
+    .hero { padding-top: 56px; }
+    .hero img.icon { width: 100px; height: 100px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .track { scroll-behavior: auto; }
+    .dots button { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <img class="icon" src="../assets/icon.png" alt="" width="120" height="120">
+  <h1 class="display">Smart Center</h1>
+  <p class="tagline display">Piccole utility per il Mac, in un unico posto.</p>
+  <div class="cta">
+    <a class="button" href="https://github.com/AlexanderBeef/smart-center-releases/releases/latest/download/Smart-Center.dmg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+      Scarica per Mac
+    </a>
+    <p class="meta">Gratis · Versione 1.0.2<span class="sep"> · </span><br class="brk">Apple silicon · macOS 14 o successivo</p>
+    <img class="sv" src="../assets/badge-vertical.png" alt="Built for Apple silicon" lang="en" width="408" height="510">
+  </div>
+</header>
+
+<div class="gallery" aria-roledescription="carosello" aria-label="Schermate">
+  <div class="track" id="track">
+    <figure class="slide" style="margin:0"><img src="../assets/screens/1-general.png" alt="Impostazioni generali" width="1600" height="1332"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/2-display-corners.png" alt="Impostazioni di Angoli dello schermo" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/3-window-tiling.png" alt="Impostazioni di Affiancamento finestre" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/4-quit-on-close.png" alt="Impostazioni di Esci alla chiusura" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/5-menu-bar-management.png" alt="Impostazioni di Gestione barra dei menu" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/6-keep-awake.png" alt="Impostazioni di Mantieni attivo" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/7-color-picker.png" alt="Impostazioni di Selettore colore" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/8-clipboard-history.png" alt="Impostazioni di Cronologia appunti" width="1600" height="1332" loading="lazy"></figure>
+    <figure class="slide" style="margin:0"><img src="../assets/screens/9-updates.png" alt="Informazioni e aggiornamenti" width="1600" height="1332" loading="lazy"></figure>
+  </div>
+  <div class="dots" id="dots" role="tablist"></div>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="display">Tutto ciò che ti serve.<br>Niente di più.</h2>
+    <p class="lead">Attiva i moduli che vuoi e usali dalla barra dei menu o da Centro di Controllo.</p>
+
+    <div class="groups">
+      <div class="group">
+        <h3>Sempre attivi</h3>
+        <div class="list">
+          <div class="row"><img src="../assets/modules/radius-corner.png" alt=""><div class="text"><h4>Angoli dello schermo</h4><p>Angoli arrotondati per i tuoi schermi.</p></div></div>
+          <div class="row"><img src="../assets/modules/window-layout.png" alt=""><div class="text"><h4>Affiancamento finestre</h4><p>Trascina una finestra verso un bordo per disporla a mosaico.</p></div></div>
+          <div class="row"><img src="../assets/modules/quit-on-close.png" alt=""><div class="text"><h4>Esci alla chiusura</h4><p>Le app si chiudono quando chiudi la loro ultima finestra.</p></div></div>
+          <div class="row"><img src="../assets/modules/dock-click.png" alt=""><div class="text"><h4>Riduci dal Dock</h4><p>Fai clic sull’icona di un’app nel Dock per ridurla.</p></div></div>
+          <div class="row"><img src="../assets/modules/window-maximize.png" alt=""><div class="text"><h4>Riempi schermo al clic</h4><p>Il pulsante verde riempie lo schermo.</p></div></div>
+          <div class="row"><img src="../assets/modules/compact-menu-bar.png" alt=""><div class="text"><h4>Gestione barra dei menu</h4><p>Nascondi le icone della barra dei menu che non ti servono.</p></div></div>
+        </div>
+      </div>
+      <div class="group">
+        <h3>Strumenti</h3>
+        <div class="list">
+          <div class="row"><img src="../assets/modules/color-picker.png" alt=""><div class="text"><h4>Selettore colore</h4><p>Preleva qualsiasi colore sullo schermo.</p></div></div>
+          <div class="row"><img src="../assets/modules/keyboard-cleaning.png" alt=""><div class="text"><h4>Pulizia tastiera</h4><p>Blocca la tastiera mentre la pulisci.</p></div></div>
+          <div class="row"><img src="../assets/modules/keep-awake.png" alt=""><div class="text"><h4>Mantieni attivo</h4><p>Impedisci al Mac di andare in stop.</p></div></div>
+          <div class="row"><img src="../assets/modules/scratchpad.png" alt=""><div class="text"><h4>Taccuino</h4><p>Note rapide, sempre a portata di mano.</p></div></div>
+          <div class="row"><img src="../assets/modules/camera-preview.png" alt=""><div class="text"><h4>Anteprima videocamera</h4><p>Controlla la fotocamera prima di una chiamata.</p></div></div>
+          <div class="row"><img src="../assets/modules/text-capture.png" alt=""><div class="text"><h4>Cattura testo</h4><p>Copia il testo da qualsiasi punto dello schermo.</p></div></div>
+          <div class="row"><img src="../assets/modules/clipboard-history.png" alt=""><div class="text"><h4>Cronologia appunti</h4><p>Incolla di nuovo ciò che hai copiato.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="soon">
+      <h3>Prossimamente</h3>
+      <div class="tiles">
+        <div class="tile"><img src="../assets/modules/display-control.png" alt=""><div><h4>Controllo monitor</h4><p>La luminosità di ogni monitor.</p></div></div>
+        <div class="tile"><img src="../assets/modules/window-switcher.png" alt=""><div><h4>Selettore finestre</h4><p>Passa da una finestra all’altra.</p></div></div>
+        <div class="tile"><img src="../assets/modules/dock-preview.png" alt=""><div><h4>Anteprima Dock</h4><p>Vedi le finestre dal Dock.</p></div></div>
+        <div class="tile"><img src="../assets/modules/dynamic-island.png" alt=""><div><h4>Dynamic Notch</h4><p>Rendi utile il notch.</p></div></div>
+        <div class="tile"><img src="../assets/modules/shelf.png" alt=""><div><h4>Drag Shelf</h4><p>Un posto dove appoggiare i tuoi file.</p></div></div>
+        <div class="tile"><img src="../assets/modules/file-converter.png" alt=""><div><h4>Convertitore file</h4><p>Converti i file trascinandoli.</p></div></div>
+        <div class="tile"><img src="../assets/modules/keyboard-shortcuts.png" alt=""><div><h4>Abbreviazioni da tastiera</h4><p>Abbreviazioni per ogni modulo.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="end-silicon" style="text-align:center">
+  <div class="wrap">
+    <img class="sh" src="../assets/badge-horizontal.png" alt="Built for Apple silicon" lang="en" width="1200" height="462">
+    <h2 class="display">Fatta per Apple silicon.</h2>
+    <p class="lead">Smart Center funziona solo sui Mac con Apple silicon, da M1 in poi. Non funziona sui Mac con processore Intel.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="display">Privacy fin dall’inizio.</h2>
+    <p class="lead">Smart Center non raccoglie, invia né condivide alcuna informazione.</p>
+    <div class="facts">
+      <div class="fact"><h4>Resta sul tuo Mac</h4><p>Le tue note, il testo che copi e le tue impostazioni vengono salvati solo su questo Mac. Nessun account, nessuna statistica d’uso.</p></div>
+      <div class="fact"><h4>Scegli tu i permessi</h4><p>Ogni modulo chiede solo ciò che gli serve e puoi modificare i permessi in qualsiasi momento in Impostazioni di Sistema.</p></div>
+      <div class="fact"><h4>Firmata e autenticata</h4><p>Verificata da Apple, così macOS la apre senza avvisi. Si collega a internet solo per cercare aggiornamenti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <img src="../assets/icon.png" alt="" width="80" height="80">
+    <h2 class="display">Scarica Smart Center.</h2>
+    <p class="lead">Gratis per i Mac con Apple silicon.</p>
+    <div class="cta">
+      <a class="button" href="https://github.com/AlexanderBeef/smart-center-releases/releases/latest/download/Smart-Center.dmg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+        Scarica per Mac
+      </a>
+      <p class="meta">Apri il file e trascina Smart Center nella cartella Applicazioni.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Alessandro Manzo. Tutti i diritti riservati.</span>
+    <span>
+      <a href="https://github.com/AlexanderBeef/smart-center-releases/blob/main/PRIVACY.md">Privacy</a> ·
+      <a href="https://github.com/AlexanderBeef/smart-center-releases/releases">Tutte le versioni</a>
+      <span class="lang" role="group" aria-label="Lingua"><a href="../" data-lang="en" lang="en" hreflang="en">English</a> · <span aria-current="page">Italiano</span></span>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // Carousel: scorre da solo ogni 4,5 secondi, si ferma quando il puntatore è sopra o lo si tocca;
+  // i pallini mostrano la schermata e la scelgono. Con "Riduci movimento" non scorre da solo.
+  (function () {
+    const track = document.getElementById('track');
+    const dotsBox = document.getElementById('dots');
+    const slides = Array.from(track.children);
+    let index = 0, timer = null;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const dots = slides.map((slide, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-label', slide.querySelector('img').alt);
+      b.addEventListener('click', () => { go(i); restart(); });
+      dotsBox.appendChild(b);
+      return b;
+    });
+    function mark(i) { dots.forEach((d, j) => d.setAttribute('aria-current', j === i ? 'true' : 'false')); }
+    function go(i) {
+      index = (i + slides.length) % slides.length;
+      track.scrollTo({ left: slides[index].offsetLeft - track.offsetLeft, behavior: reduce ? 'auto' : 'smooth' });
+      mark(index);
+    }
+    function start() { if (!reduce) timer = setInterval(() => go(index + 1), 7000); }
+    function stop() { clearInterval(timer); timer = null; }
+    function restart() { stop(); start(); }
+
+    let ticking = false;
+    track.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        index = Math.round(track.scrollLeft / track.clientWidth);
+        mark(index);
+        ticking = false;
+      });
+    });
+    track.addEventListener('mouseenter', stop);
+    track.addEventListener('mouseleave', start);
+    track.addEventListener('touchstart', stop, { passive: true });
+    track.addEventListener('touchend', () => setTimeout(start, 3000), { passive: true });
+    mark(0);
+    start();
+  })();
+</script>
+</body>
+</html>

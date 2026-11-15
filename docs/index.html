@@ -3,12 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+  // Lingua: la scelta fatta nel footer si ricorda. Senza una scelta, se il browser preferisce
+  // l'italiano all'inglese si passa alla pagina italiana. Niente redirect per i bot: la pagina resta indicizzabile.
+  (function () {
+    var KEY = 'sc-lang';
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[data-lang]');
+      if (a) { try { localStorage.setItem(KEY, a.getAttribute('data-lang')); } catch (_) {} }
+    });
+    if (/bot|crawl|spider|slurp|preview|lighthouse/i.test(navigator.userAgent)) return;
+    var lang = null;
+    try { lang = localStorage.getItem(KEY); } catch (_) {}
+    if (!lang) {
+      var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      for (var i = 0; i < list.length; i++) {
+        var p = String(list[i]).toLowerCase().split('-')[0];
+        if (p === 'it' || p === 'en') { lang = p; break; }
+      }
+    }
+    if (lang === 'it') location.replace(new URL('it/' + location.search + location.hash, location.href).href);
+  })();
+</script>
 <title>Smart Center — Free Mac utilities for macOS: window tiling, keep awake, clipboard history</title>
 <meta name="description" content="Smart Center is a free menu bar app for macOS with small Mac utilities in one place: window tiling, quit on close, keep awake, clipboard history, color picker, text capture, and more. Built for Apple silicon.">
 <meta name="keywords" content="Mac utilities, macOS utilities, Mac menu bar app, macOS app, Apple silicon, M1, window tiling, window manager, keep awake, clipboard history, color picker, text recognition, quit on close, free Mac app">
 <meta name="author" content="Alessandro Manzo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://alexanderbeef.github.io/smart-center-releases/">
+<link rel="alternate" hreflang="en" href="https://alexanderbeef.github.io/smart-center-releases/">
+<link rel="alternate" hreflang="it" href="https://alexanderbeef.github.io/smart-center-releases/it/">
+<link rel="alternate" hreflang="x-default" href="https://alexanderbeef.github.io/smart-center-releases/">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
@@ -109,6 +134,9 @@
   .button:hover { background: var(--blue-hover); text-decoration: none; }
   .button svg { width: 16px; height: 16px; }
   .meta { font-size: 14px; line-height: 1.43; color: var(--text-2); margin: 0; letter-spacing: -0.016em; }
+  /* Sul telefono la riga sotto il pulsante va a capo dopo la versione, senza il punto in fondo */
+  .meta .brk { display: none; }
+  @media (max-width: 480px) { .meta .sep { display: none; } .meta .brk { display: inline; } }
   /* Adesivi "Built for Apple silicon" (immagini fatte da Alessandro): verticale in alto, orizzontale nella sezione */
   .sv { width: 168px; height: auto; margin-top: 10px; }
 
@@ -171,6 +199,8 @@
   footer { border-top: 1px solid var(--line); padding: 18px 0 36px; font-size: 12px; color: var(--text-3); }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
   footer a { color: var(--text-2); }
+  /* Selettore della lingua: la lingua attuale è testo, l'altra è un link */
+  footer .lang { margin-left: 10px; padding-left: 12px; border-left: 1px solid var(--line); white-space: nowrap; }
 
   @media (max-width: 760px) {
     .groups { grid-template-columns: 1fr; }
@@ -198,7 +228,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
       Download for Mac
     </a>
-    <p class="meta">Free · Version 1.0.2 · macOS 14 or later</p>
+    <p class="meta">Free · Version 1.0.2<span class="sep"> · </span><br class="brk">Apple silicon · macOS 14 or later</p>
     <img class="sv" src="assets/badge-vertical.png" alt="Built for Apple silicon" width="408" height="510">
   </div>
 </header>
@@ -305,6 +335,7 @@
     <span>
       <a href="https://github.com/AlexanderBeef/smart-center-releases/blob/main/PRIVACY.md">Privacy</a> ·
       <a href="https://github.com/AlexanderBeef/smart-center-releases/releases">All versions</a>
+      <span class="lang" role="group" aria-label="Language"><span aria-current="page">English</span> · <a href="it/" data-lang="it" lang="it" hreflang="it">Italiano</a></span>
     </span>
   </div>
 </footer>
