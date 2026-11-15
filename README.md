@@ -1,6 +1,6 @@
 # Smart Center
 
-Small utilities for your Mac, in one place.
+The best utilities for your Mac, in one place.
 
 Smart Center lives in the menu bar and brings together a set of small tools, called modules.
 Turn on the ones you need, and use them from its settings, the menu bar, or Control Center.
