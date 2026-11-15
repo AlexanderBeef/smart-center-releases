@@ -3,6 +3,33 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.0.3</title>
+            <pubDate>Sun, 15 Nov 2026 16:39:45 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.0.3</h2>
+<ul>
+  <li>Check for updates from the About window or from the Smart Center menu.</li>
+  <li>When Smart Center is in Italian, the notes about each update are in Italian too.</li>
+  <li><b>Menu Bar Management</b>: on versions of macOS earlier than macOS 27, showing hidden icons from a menu now works, and the menu shows the icons as they look in the menu bar.</li>
+  <li><b>Quit on Close</b> works more reliably with more than one display.</li>
+  <li>The Control Center illustration in Settings and the installer window follow the light or dark appearance.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.0.3</h2>
+<ul>
+  <li>Cerca gli aggiornamenti dalla finestra Informazioni o dal menu di Smart Center.</li>
+  <li>Quando Smart Center è in italiano, anche le note di ogni aggiornamento sono in italiano.</li>
+  <li><b>Gestione barra dei menu</b>: sulle versioni di macOS precedenti a macOS 27 ora funziona la visualizzazione delle icone nascoste da un menu, che mostra le icone come appaiono nella barra.</li>
+  <li><b>Esci alla chiusura</b> funziona in modo più affidabile con più di un monitor.</li>
+  <li>L’illustrazione del Centro di Controllo nelle impostazioni e la finestra d’installazione seguono l’aspetto chiaro o scuro.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.3/Smart-Center-1.0.3.zip" length="2572913" type="application/octet-stream" sparkle:edSignature="S/CH+BjcJFHZivxJyYfFxWeklTF/VJX2PJaCTfx3E8s/jSa5NeCQ/GyyWVxnX7y9mehfhRUn+DHppXOHucecDQ=="/>
+        </item>
+        <item>
             <title>1.0.2</title>
             <pubDate>Sun, 15 Nov 2026 15:19:50 +0100</pubDate>
             <sparkle:version>3</sparkle:version>
@@ -33,30 +60,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.1/Smart-Center-1.0.1.zip" length="2536351" type="application/octet-stream" sparkle:edSignature="bjk9N3ljYqsH9JODyhINSj69HK+AaWLfOFVoZlfwYYYLVP+Owl/ZG/FqyE4/BgZV1JwSdb1WTqF6JaMU3bm/Bw=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Sat, 14 Nov 2026 19:18:56 +0100</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2>Smart Center 1.0</h2>
-<p>The first version of Smart Center: small utilities for your Mac, in one place.</p>
-<ul>
-  <li><b>Display Corners</b>: round the corners of the displays you choose.</li>
-  <li><b>Window Tiling</b>: drag a window to an edge or corner of the screen to tile it.</li>
-  <li><b>Quit on Close</b>: apps quit when you close their last window. You can also require holding ⌘Q to quit.</li>
-  <li><b>Minimize from Dock</b> and <b>Fill Screen on Click</b>: the Dock icon minimizes, the green button fills the screen.</li>
-  <li><b>Menu Bar Management</b>: hide the menu bar icons you don’t need.</li>
-  <li><b>Color Picker</b>, <b>Text Capture</b>, <b>Scratchpad</b>, <b>Camera Preview</b>, <b>Keyboard Cleaning</b>.</li>
-  <li><b>Keep Awake</b>: on demand, on a schedule, or while an app is open, with a battery limit.</li>
-  <li><b>Clipboard History</b>: paste again what you copied, or paste as plain text with ⌥⇧⌘V.</li>
-  <li>Control Center and menu bar controls, in English and Italian.</li>
-</ul>
-<p>Requires a Mac with Apple silicon and macOS 14 or later. Tested on macOS 27.</p>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0/Smart-Center-1.0.zip" length="2531043" type="application/octet-stream" sparkle:edSignature="mFtslXT9y6ITEfwPeZdXJlYmjCefRh3fT/t1T+gtYgt0h3IKdTBN/Yp+l1MneQqDEIrv5nf44g72KPAEDI/QAQ=="/>
         </item>
     </channel>
 </rss>
