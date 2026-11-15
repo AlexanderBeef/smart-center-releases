@@ -3,6 +3,29 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.0.4</title>
+            <pubDate>Sun, 15 Nov 2026 16:55:59 +0100</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.0.4</h2>
+<ul>
+  <li><b>Window Tiling</b> shows the macOS options it conflicts with using the names they have in System Settings, in your language.</li>
+  <li><b>Menu Bar Management</b>: a missing Italian translation is back.</li>
+  <li>What’s New shows an icon that matches each change.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.0.4</h2>
+<ul>
+  <li><b>Affiancamento finestre</b> mostra le opzioni di macOS con cui entra in conflitto con i nomi che hanno in Impostazioni di Sistema, nella tua lingua.</li>
+  <li><b>Gestione barra dei menu</b>: è tornata una traduzione italiana che mancava.</li>
+  <li>“Novità” mostra un’icona adatta a ogni cambiamento.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.4/Smart-Center-1.0.4.zip" length="2574609" type="application/octet-stream" sparkle:edSignature="XoLz3vZYpysztwlYPTY7iiU9kalX7FSjSD3HSOWco02bTWLrRSaFiajdSbNMiP1q0GlDWyb1gjg5ToJey7JIDA=="/>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Sun, 15 Nov 2026 16:39:45 +0100</pubDate>
             <sparkle:version>4</sparkle:version>
@@ -45,21 +68,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.2/Smart-Center-1.0.2.zip" length="2556890" type="application/octet-stream" sparkle:edSignature="xojcJZg5k0fcQGw8oIoQ8z1eceJRCoGwpD0WFyy8CaqGaXChYZPFWCR+HkZVRM4djZ6UJ/xKHZGT9sH7EXn3Dw=="/>
-        </item>
-        <item>
-            <title>1.0.1</title>
-            <pubDate>Sun, 15 Nov 2026 11:44:27 +0100</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2>Smart Center 1.0.1</h2>
-<ul>
-  <li>When you open Smart Center from the Applications folder, it ejects the disk you installed it from.</li>
-  <li>The installer disk now shows Smart Center next to the Applications folder, with an arrow to drag it.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.1/Smart-Center-1.0.1.zip" length="2536351" type="application/octet-stream" sparkle:edSignature="bjk9N3ljYqsH9JODyhINSj69HK+AaWLfOFVoZlfwYYYLVP+Owl/ZG/FqyE4/BgZV1JwSdb1WTqF6JaMU3bm/Bw=="/>
         </item>
     </channel>
 </rss>
