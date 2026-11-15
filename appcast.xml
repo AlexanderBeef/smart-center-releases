@@ -3,6 +3,21 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Sun, 15 Nov 2026 11:44:27 +0100</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h2>Smart Center 1.0.1</h2>
+<ul>
+  <li>When you open Smart Center from the Applications folder, it ejects the disk you installed it from.</li>
+  <li>The installer disk now shows Smart Center next to the Applications folder, with an arrow to drag it.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.1/Smart-Center-1.0.1.zip" length="2536351" type="application/octet-stream" sparkle:edSignature="bjk9N3ljYqsH9JODyhINSj69HK+AaWLfOFVoZlfwYYYLVP+Owl/ZG/FqyE4/BgZV1JwSdb1WTqF6JaMU3bm/Bw=="/>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Sat, 14 Nov 2026 19:18:56 +0100</pubDate>
             <sparkle:version>1</sparkle:version>
