@@ -327,7 +327,7 @@
       track.scrollTo({ left: slides[index].offsetLeft - track.offsetLeft, behavior: reduce ? 'auto' : 'smooth' });
       mark(index);
     }
-    function start() { if (!reduce) timer = setInterval(() => go(index + 1), 4500); }
+    function start() { if (!reduce) timer = setInterval(() => go(index + 1), 7000); }
     function stop() { clearInterval(timer); timer = null; }
     function restart() { stop(); start(); }
 
