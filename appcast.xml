@@ -3,6 +3,27 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.0.5</title>
+            <pubDate>Mon, 16 Nov 2026 20:05:35 +0100</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.0.5</h2>
+<ul>
+  <li><b>Menu Bar Management</b> no longer moves icons and the pointer on its own on macOS 26.</li>
+  <li><b>Menu Bar Management</b>: on versions of macOS earlier than macOS 27, Wi-Fi, Battery, and the other macOS icons stay in the menu bar.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.0.5</h2>
+<ul>
+  <li><b>Gestione barra dei menu</b> non sposta più da sola le icone e il puntatore su macOS 26.</li>
+  <li><b>Gestione barra dei menu</b>: sulle versioni di macOS precedenti a macOS 27, Wi-Fi, Batteria e le altre icone di macOS restano nella barra dei menu.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.5/Smart-Center-1.0.5.zip" length="2582129" type="application/octet-stream" sparkle:edSignature="f1mbArwEIQkQcRnIqdTgYAz1ypZCkCuK2Zq9zjNKD6jBMR9IkedoXRr/Z5/ID+m7PqTS/eqZdNa76pu2t4MICg=="/>
+        </item>
+        <item>
             <title>1.0.4</title>
             <pubDate>Sun, 15 Nov 2026 16:55:59 +0100</pubDate>
             <sparkle:version>5</sparkle:version>
@@ -51,23 +72,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.3/Smart-Center-1.0.3.zip" length="2572913" type="application/octet-stream" sparkle:edSignature="S/CH+BjcJFHZivxJyYfFxWeklTF/VJX2PJaCTfx3E8s/jSa5NeCQ/GyyWVxnX7y9mehfhRUn+DHppXOHucecDQ=="/>
-        </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Sun, 15 Nov 2026 15:19:50 +0100</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2>Smart Center 1.0.2</h2>
-<ul>
-  <li><b>Menu Bar Management</b> now also works on versions of macOS earlier than macOS 27.</li>
-  <li><b>Quit on Close</b>: apps quit sooner after you close their last window, and more reliably on earlier versions of macOS.</li>
-  <li><b>Fill Screen on Click</b> and <b>Window Tiling</b> leave the same margin next to the Dock as below the menu bar.</li>
-  <li>When an update is found, a dot appears on the Smart Center icon in the menu bar.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.2/Smart-Center-1.0.2.zip" length="2556890" type="application/octet-stream" sparkle:edSignature="xojcJZg5k0fcQGw8oIoQ8z1eceJRCoGwpD0WFyy8CaqGaXChYZPFWCR+HkZVRM4djZ6UJ/xKHZGT9sH7EXn3Dw=="/>
         </item>
     </channel>
 </rss>
