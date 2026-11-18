@@ -3,6 +3,37 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Wed, 18 Nov 2026 19:53:59 +0100</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.1.2</h2>
+<ul>
+  <li><b>Menu Bar Management</b>: move between hidden icons with the keyboard, Control-click one to keep it in the menu bar or quit its app, and see macOS icons as they really look. Icons keep their order after a restart.</li>
+  <li><b>Window Tiling</b>: double-clicking a window’s title bar can fill the screen, center the window, or minimize it.</li>
+  <li><b>Fill Screen on Click</b> now works with the green button.</li>
+  <li><b>Drag Shelf</b>: items follow their files when you move or rename them, and you can share them from their menu.</li>
+  <li><b>Display Corners</b>: screen corners have the same curve as the windows.</li>
+  <li>Menus show icons on macOS 26 and later.</li>
+  <li>Other fixes and improvements.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.1.2</h2>
+<ul>
+  <li><b>Gestione barra dei menu</b>: spostati tra le icone nascoste con la tastiera, fai clic con Ctrl su un’icona per tenerla nella barra dei menu o uscire dalla sua app, e vedi le icone di macOS come sono davvero. Le icone mantengono il loro ordine dopo un riavvio.</li>
+  <li><b>Affiancamento finestre</b>: il doppio clic sulla barra del titolo di una finestra può riempire lo schermo, portare la finestra al centro o contrarla.</li>
+  <li><b>Riempi schermo al clic</b> ora funziona con il pulsante verde.</li>
+  <li><b>Mensola</b>: gli elementi seguono i loro file quando li sposti o li rinomini, e puoi condividerli dal loro menu.</li>
+  <li><b>Angoli arrotondati</b>: gli angoli dello schermo hanno la stessa curva delle finestre.</li>
+  <li>Da macOS 26 i menu mostrano le icone.</li>
+  <li>Altre correzioni e miglioramenti.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.2/Smart-Center-1.1.2.zip" length="3028801" type="application/octet-stream" sparkle:edSignature="0Q0XHU0C8R1pglWxbPlsv5oyw4nXVzDREayzOAqvzv7zVSSGjWJ40ouyFffvmOGP8Bo6ZWhVGddBf+ayA0tuDA=="/>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Wed, 18 Nov 2026 18:27:44 +0100</pubDate>
             <sparkle:version>8</sparkle:version>
@@ -69,27 +100,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.0/Smart-Center-1.1.0.zip" length="2812251" type="application/octet-stream" sparkle:edSignature="uSL8bj/Co99EFHW99haivilKScv6KwtCxdeyk+8MnL+gfbXBSJ3y+Bx8G1DNDWyb3skyxgQ9FaTKOEtPQ097Bg=="/>
-        </item>
-        <item>
-            <title>1.0.5</title>
-            <pubDate>Mon, 16 Nov 2026 20:05:35 +0100</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.0.5</h2>
-<ul>
-  <li><b>Menu Bar Management</b> no longer moves icons and the pointer on its own on macOS 26.</li>
-  <li><b>Menu Bar Management</b>: on versions of macOS earlier than macOS 27, Wi-Fi, Battery, and the other macOS icons stay in the menu bar.</li>
-</ul>
-]]></description>
-            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.0.5</h2>
-<ul>
-  <li><b>Gestione barra dei menu</b> non sposta più da sola le icone e il puntatore su macOS 26.</li>
-  <li><b>Gestione barra dei menu</b>: sulle versioni di macOS precedenti a macOS 27, Wi-Fi, Batteria e le altre icone di macOS restano nella barra dei menu.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.5/Smart-Center-1.0.5.zip" length="2582129" type="application/octet-stream" sparkle:edSignature="f1mbArwEIQkQcRnIqdTgYAz1ypZCkCuK2Zq9zjNKD6jBMR9IkedoXRr/Z5/ID+m7PqTS/eqZdNa76pu2t4MICg=="/>
         </item>
     </channel>
 </rss>
