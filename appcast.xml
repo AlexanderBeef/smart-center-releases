@@ -3,6 +3,41 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.1.1</title>
+            <pubDate>Wed, 18 Nov 2026 18:27:44 +0100</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.1.1</h2>
+<ul>
+  <li><b>Menu Bar Management</b>: hidden icons appear in a tidy grid, in the same order as in the menu bar, and open their menu with a click. You can also hide macOS icons, and the options are clearer.</li>
+  <li><b>Menu Bar Management</b> works more smoothly on earlier versions of macOS.</li>
+  <li><b>Drag Shelf</b>: drop items anywhere on the shelf or on its menu bar icon, preview them with Quick Look, and undo a removal.</li>
+  <li><b>Clipboard History</b>: choose items faster with the keyboard and undo a deletion.</li>
+  <li><b>Window Tiling</b>: press the same shortcut again to switch between sizes.</li>
+  <li><b>Color Picker</b>, <b>Text Capture</b>, <b>Scratchpad</b> and <b>Keep Awake</b> have small new options.</li>
+  <li><b>Quit on Close</b>: more apps quit when you close their last window.</li>
+  <li>Smart Center looks for updates once a day and uses less energy.</li>
+  <li>Other fixes and improvements.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.1.1</h2>
+<ul>
+  <li><b>Gestione barra dei menu</b>: le icone nascoste compaiono in una griglia ordinata, nello stesso ordine della barra dei menu, e con un clic aprono il loro menu. Puoi nascondere anche le icone di macOS, e le opzioni sono più chiare.</li>
+  <li><b>Gestione barra dei menu</b> funziona in modo più fluido sulle versioni precedenti di macOS.</li>
+  <li><b>Mensola</b>: rilascia gli elementi ovunque sulla mensola o sulla sua icona nella barra dei menu, guardali con Quick Look e annulla una rimozione.</li>
+  <li><b>Cronologia appunti</b>: scegli gli elementi più in fretta con la tastiera e annulla un’eliminazione.</li>
+  <li><b>Affiancamento finestre</b>: premi di nuovo la stessa scorciatoia per passare da una misura all’altra.</li>
+  <li><b>Selettore colore</b>, <b>Cattura testo</b>, <b>Taccuino</b> e <b>Mantieni attivo</b> hanno piccole opzioni nuove.</li>
+  <li><b>Esci alla chiusura</b>: più app si chiudono quando ne chiudi l’ultima finestra.</li>
+  <li>Smart Center cerca gli aggiornamenti una volta al giorno e consuma meno energia.</li>
+  <li>Altre correzioni e miglioramenti.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.1/Smart-Center-1.1.1.zip" length="2977982" type="application/octet-stream" sparkle:edSignature="o9/yMYd/Hxr0yAXhzznJXM5InGABE+ifJIueKdYv5s2Ld9r4Tr1SRgiQtPnNjMh0OHinzRDLmz4LRhgP3wJpDQ=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Wed, 18 Nov 2026 13:45:03 +0100</pubDate>
             <sparkle:version>7</sparkle:version>
@@ -55,29 +90,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.5/Smart-Center-1.0.5.zip" length="2582129" type="application/octet-stream" sparkle:edSignature="f1mbArwEIQkQcRnIqdTgYAz1ypZCkCuK2Zq9zjNKD6jBMR9IkedoXRr/Z5/ID+m7PqTS/eqZdNa76pu2t4MICg=="/>
-        </item>
-        <item>
-            <title>1.0.4</title>
-            <pubDate>Sun, 15 Nov 2026 16:55:59 +0100</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.0.4</h2>
-<ul>
-  <li><b>Window Tiling</b> shows the macOS options it conflicts with using the names they have in System Settings, in your language.</li>
-  <li><b>Menu Bar Management</b>: a missing Italian translation is back.</li>
-  <li>What’s New shows an icon that matches each change.</li>
-</ul>
-]]></description>
-            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.0.4</h2>
-<ul>
-  <li><b>Affiancamento finestre</b> mostra le opzioni di macOS con cui entra in conflitto con i nomi che hanno in Impostazioni di Sistema, nella tua lingua.</li>
-  <li><b>Gestione barra dei menu</b>: è tornata una traduzione italiana che mancava.</li>
-  <li>“Novità” mostra un’icona adatta a ogni cambiamento.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.0.4/Smart-Center-1.0.4.zip" length="2574609" type="application/octet-stream" sparkle:edSignature="XoLz3vZYpysztwlYPTY7iiU9kalX7FSjSD3HSOWco02bTWLrRSaFiajdSbNMiP1q0GlDWyb1gjg5ToJey7JIDA=="/>
         </item>
     </channel>
 </rss>
