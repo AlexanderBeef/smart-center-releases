@@ -3,6 +3,33 @@
     <channel>
         <title>Smart Center</title>
         <item>
+            <title>1.1.3</title>
+            <pubDate>Fri, 20 Nov 2026 11:25:47 +0100</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.1.3</h2>
+<ul>
+  <li>The settings window is as wide as System Settings, with descriptions that are easier to read.</li>
+  <li><b>Fill Screen on Click</b> and <b>Window Tiling</b>: windows fill the screen more reliably.</li>
+  <li><b>Keep Awake</b>: the menu bar icon shows when your Mac is kept awake, even by a schedule or an app.</li>
+  <li>Menu icons appear on macOS 27.</li>
+  <li>Other fixes and improvements.</li>
+</ul>
+]]></description>
+            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.1.3</h2>
+<ul>
+  <li>La finestra delle impostazioni è larga quanto Impostazioni di Sistema, con descrizioni più facili da leggere.</li>
+  <li><b>Riempi schermo al clic</b> e <b>Affiancamento finestre</b>: le finestre riempiono lo schermo in modo più affidabile.</li>
+  <li><b>Mantieni attivo</b>: l’icona nella barra dei menu mostra quando il Mac è tenuto attivo, anche da un orario o da un’app.</li>
+  <li>Le icone dei menu compaiono anche su macOS 27.</li>
+  <li>Altre correzioni e miglioramenti.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.3/Smart-Center-1.1.3.zip" length="3030759" type="application/octet-stream" sparkle:edSignature="SJLiNU9vipK1vpEjA/5DYE7hJMFBXMSUKG12IkH6Wa7KbPzNWgdIDBtxe6QhLQVBW3RJL6a5OYfIvzlM7kt0Dg=="/>
+        </item>
+        <item>
             <title>1.1.2</title>
             <pubDate>Wed, 18 Nov 2026 19:53:59 +0100</pubDate>
             <sparkle:version>9</sparkle:version>
@@ -67,39 +94,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.1/Smart-Center-1.1.1.zip" length="2977982" type="application/octet-stream" sparkle:edSignature="o9/yMYd/Hxr0yAXhzznJXM5InGABE+ifJIueKdYv5s2Ld9r4Tr1SRgiQtPnNjMh0OHinzRDLmz4LRhgP3wJpDQ=="/>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Wed, 18 Nov 2026 13:45:03 +0100</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description xml:lang="en"><![CDATA[<h2>Smart Center 1.1</h2>
-<ul>
-  <li><b>Keyboard Shortcuts</b>: use the keyboard to open tools, turn modules on or off, and arrange windows.</li>
-  <li><b>Drag Shelf</b>: a floating shelf to keep what you drag, then drop it where you need it.</li>
-  <li><b>Window Tiling</b>: arrange your windows with keyboard shortcuts, even across displays.</li>
-  <li>The floating windows of the modules look and work the same.</li>
-  <li><b>Clipboard History</b> is clearer: it’s easier to tell items apart and see which one is selected.</li>
-  <li><b>Quit on Close</b>: apps quit more reliably when you close their last window.</li>
-  <li><b>Fill Screen on Click</b>: windows fill the right display more reliably.</li>
-  <li>Other fixes and improvements.</li>
-</ul>
-]]></description>
-            <description xml:lang="it"><![CDATA[<h2>Smart Center 1.1</h2>
-<ul>
-  <li><b>Scorciatoie da tastiera</b>: usa la tastiera per aprire gli strumenti, attivare o disattivare i moduli e disporre le finestre.</li>
-  <li><b>Drag Shelf</b>: una mensola fluttuante dove tenere ciò che trascini, per rilasciarlo dove ti serve.</li>
-  <li><b>Affiancamento finestre</b>: disponi le finestre con le scorciatoie da tastiera, anche tra più schermi.</li>
-  <li>Le finestre fluttuanti dei moduli hanno lo stesso aspetto e funzionano allo stesso modo.</li>
-  <li><b>Cronologia appunti</b> è più chiara: è più facile distinguere gli elementi e vedere quale è selezionato.</li>
-  <li><b>Esci alla chiusura</b>: le app escono in modo più affidabile quando ne chiudi l’ultima finestra.</li>
-  <li><b>Riempi schermo al clic</b>: le finestre riempiono lo schermo giusto in modo più affidabile.</li>
-  <li>Altre correzioni e miglioramenti.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/AlexanderBeef/smart-center-releases/releases/download/v1.1.0/Smart-Center-1.1.0.zip" length="2812251" type="application/octet-stream" sparkle:edSignature="uSL8bj/Co99EFHW99haivilKScv6KwtCxdeyk+8MnL+gfbXBSJ3y+Bx8G1DNDWyb3skyxgQ9FaTKOEtPQ097Bg=="/>
         </item>
     </channel>
 </rss>
